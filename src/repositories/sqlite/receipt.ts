@@ -52,13 +52,13 @@ export class SqliteReceiptRepository implements ReceiptRepository {
         const transaction = this.database.transaction(
             (receipt: ReceiptWithItems) => {
                 const queryReceipt = `
-					INSERT INTO receipt (
-						id,
-						retailer,
-						purchase_date,
-						purchase_time,
-						total
-					) VALUES (?, ?, ?, ?, ?)`;
+                    INSERT INTO receipt (
+                        id,
+                        retailer,
+                        purchase_date,
+                        purchase_time,
+                        total
+                    ) VALUES (?, ?, ?, ?, ?)`;
                 const args: unknown[] = [
                     receipt.id,
                     receipt.retailer,
