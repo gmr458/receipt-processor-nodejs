@@ -1,0 +1,26 @@
+{
+    "name": "receipt-processor-nodejs",
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "test": "vitest",
+        "format": "biome format --write ./src ./test"
+    },
+    "dependencies": {
+        "@hono/node-server": "^1.13.7",
+        "better-sqlite3": "^11.8.1",
+        "date-fns": "^4.1.0",
+        "hono": "^4.6.17",
+        "ioredis": "^5.4.2",
+        "redis": "^4.7.0",
+        "uuid": "^11.0.5"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.9.4",
+        "@types/better-sqlite3": "^7.6.12",
+        "@types/node": "^20.11.17",
+        "tsx": "^4.7.1",
+        "vitest": "^3.0.3"
+    },
+    "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
+}
